@@ -28,7 +28,8 @@ Usage
 	cp solarized.vim ~/.vim/colors
 	cp .vimrc ~/
 
-###
+### Terminator
+
 	mkdir -p ~/.config/terminator
 	cp config ~/.config/terminator
 
