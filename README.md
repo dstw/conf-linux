@@ -5,8 +5,8 @@ My personal linux config. Contain some customized settings. Including:
 * Vim
 * Terminator
 
-Dependencies
-------------
+Prerequisites
+-------------
 
 * vim
 * terminator
