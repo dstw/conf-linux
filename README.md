@@ -24,8 +24,9 @@ Usage
 
 ### Vim
 
-	mkdir -p ~/.vim/colors
-	cp solarized.vim ~/.vim/colors
+	mkdir -p ~/.vim/colors/ ~/.vim/plugin/
+	cp solarized.vim ~/.vim/colors/
+	cp fugitive.vim ~/.vim/plugin/
 	cp .vimrc ~/
 
 ### Terminator
