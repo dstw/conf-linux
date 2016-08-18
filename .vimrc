@@ -20,12 +20,13 @@ set mousemodel=popup
 set ruler
 set number
 set nofoldenable
-set scrolloff=10
+set scrolloff=5
 set tabstop=8
 set softtabstop=8
 set shiftwidth=8
 set noexpandtab
 filetype plugin indent on
+vnoremap // y/<C-R>"<CR>
 
 if has("gui_running")
 	set t_Co=256
