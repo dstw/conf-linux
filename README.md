@@ -24,15 +24,11 @@ Usage
 
 ### Vim
 
-	mkdir -p ~/.vim/colors/ ~/.vim/plugin/
-	cp solarized.vim ~/.vim/colors/
-	cp fugitive.vim ~/.vim/plugin/
-	cp .vimrc ~/
+	cp .vi* ~/
 
 ### Terminator
 
-	mkdir -p ~/.config/terminator
-	cp config ~/.config/terminator
+	cp .config ~/
 
 Screenshots
 -----------
