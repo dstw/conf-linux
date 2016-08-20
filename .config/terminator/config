@@ -1,0 +1,72 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  focus = system
+  suppress_multiple_term_dialog = True
+  title_transmit_bg_color = "#d30102"
+[keybindings]
+  go_next = <Primary>e
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = e4f41de9-eb22-4cad-a6bd-64a7e15a1610
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 71:21
+      size = 1295, 747
+      title = didik@thinkpad: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 370
+      ratio = 0.499330655957
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 644
+      ratio = 0.499613899614
+      type = HPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = e4f41de9-eb22-4cad-a6bd-64a7e15a1610
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 26d99441-3a19-4c08-aecd-ba20a974c4fe
+    [[[terminal5]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 6670da72-fca0-47d7-b8ca-73f9792b4e7f
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_image = None
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+  [[default_bak]]
+    background_image = None
+  [[solarized-dark]]
+    background_color = "#002b36"
+    background_image = None
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#586e75:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+  [[solarized-light]]
+    background_color = "#eee8d5"
+    background_image = None
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
