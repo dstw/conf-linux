@@ -27,7 +27,7 @@ Usage
 -----
 
 	git clone git@github.com:dstw/dotfiles.git
-	cd conf-linux
+	cd dotfiles/ 
 
 ### Vim
 
