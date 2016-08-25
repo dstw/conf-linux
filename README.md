@@ -5,6 +5,7 @@ My personal linux config. Contain some customized settings. Including:
 * Vim
 * Terminator
 * Git
+* Mutt
 
 Prerequisites
 -------------
@@ -12,6 +13,9 @@ Prerequisites
 * vim
 * terminator
 * git
+* mutt
+* fetchmail
+* procmail
 
 Recommended to install
 ----------------------
@@ -35,6 +39,10 @@ Usage
 ### Git
 	
 	cp .gitconfig ~/
+
+### Mutt
+
+	cp .fetchmailrc .procmailrc .muttrc .forward ~/
 
 Screenshots
 -----------
