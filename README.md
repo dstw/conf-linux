@@ -1,6 +1,7 @@
-# conf-linux
+# dotfiles
 
-My personal linux config. Contain some customized settings. Including:
+My personal linux configuration for desktop/workstation. Contain some customized 
+settings, includes:
 
 * Vim
 * Terminator
@@ -43,6 +44,9 @@ Usage
 ### Mutt
 
 	cp .fetchmailrc .procmailrc .muttrc .forward ~/
+
+Don't forget to edit .gitconfig, .fetchmailrc and .muttrc as they contain email
+settings which absolutely unique among different person.
 
 Screenshots
 -----------
