@@ -4,12 +4,14 @@ My personal linux config. Contain some customized settings. Including:
 
 * Vim
 * Terminator
+* Git
 
 Prerequisites
 -------------
 
 * vim
 * terminator
+* git
 
 Recommended to install
 ----------------------
@@ -29,6 +31,10 @@ Usage
 ### Terminator
 
 	cp .config ~/
+
+### Git
+	
+	cp .gitconfig ~/
 
 Screenshots
 -----------
