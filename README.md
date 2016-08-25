@@ -26,7 +26,7 @@ Recommended to install
 Usage
 -----
 
-	git clone git@github.com:dstw/conf-linux.git
+	git clone git@github.com:dstw/dotfiles.git
 	cd conf-linux
 
 ### Vim
