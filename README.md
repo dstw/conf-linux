@@ -43,7 +43,9 @@ Usage
 
 ### Mutt
 
-	cp .fetchmailrc .procmailrc .muttrc .forward ~/
+	cp .fetchmailrc .procmailrc .muttrc .forward .bashrc ~/
+	touch ~/mbox ~/.fetchmail.log
+	source ~/.bashrc 
 
 Don't forget to edit .gitconfig, .fetchmailrc and .muttrc as they contain email
 settings which absolutely unique among different person.
