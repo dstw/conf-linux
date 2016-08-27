@@ -1,5 +1,13 @@
+# Decrypt Password
+source "gpg -dq $HOME/.gnupg/pass |"
+
 # Storage
-set spoolfile = "/home/didik/mbox"
+set mbox_type = mbox
+set mbox = "~/mail/inbox"
+set folder = "~/mail/"
+set spoolfile = "~/mail/inbox"
+set record = "~/mail/sent"
+set postponed = "~/mail/postponed"
 
 # Identity
 set realname = "Didik Setiawan"
@@ -9,7 +17,12 @@ set from = "ds@didiksetiawan.com"
 set use_from = yes
 set envelope_from = yes
 set send_charset = "us-ascii:utf-8"
-set sort = reverse-date-received
+set sort = reverse-threads
+
+# Sending Email
+set ssl_force_tls = yes
+set smtp_url = "smtps://$from@smtp.zoho.com:465"
+set smtp_pass = $my_pw_zoho
 
 # Keybindings
 bind pager j next-line
