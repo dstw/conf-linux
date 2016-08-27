@@ -113,4 +113,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export MAIL=$HOME/mbox 
+export MAIL=$HOME/mail/inbox 
