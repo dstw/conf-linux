@@ -1,5 +1,5 @@
 # Decrypt Password
-source "gpg -dq $HOME/.gnupg/pass |"
+# source "gpg -dq $HOME/.gnupg/pass |"
 
 # Storage
 set mbox_type = mbox
@@ -18,6 +18,7 @@ set use_from = yes
 set envelope_from = yes
 set send_charset = "us-ascii:utf-8"
 set sort = reverse-threads
+set index_format="%4C %Z %[%D %H:%M:%S] %-15.15L (%4l) %s"
 
 # Sending Email
 set ssl_force_tls = yes
