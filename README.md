@@ -15,8 +15,6 @@ Prerequisites
 * terminator
 * git
 * mutt
-* fetchmail
-* procmail
 
 Recommended to install
 ----------------------
@@ -31,7 +29,7 @@ Usage
 
 ### Vim
 
-	cp .vi* ~/
+	cp -Rp .vi* ~/
 
 ### Terminator
 
@@ -43,12 +41,13 @@ Usage
 
 ### Mutt
 
-	cp .fetchmailrc .procmailrc .muttrc .forward .bashrc ~/
-	touch ~/mbox ~/.fetchmail.log
+	cp .muttrc ~/
+	mkdir mail
+	touch ~/mail/inbox
 	source ~/.bashrc 
 
-Don't forget to edit .gitconfig, .fetchmailrc and .muttrc as they contain email
-settings which absolutely unique among different person.
+Don't forget to edit .gitconfig and .muttrc as they contain email
+settings which unique among different person.
 
 Screenshots
 -----------
