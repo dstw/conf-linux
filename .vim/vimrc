@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set nocompatible
 set nobackup nowritebackup noswapfile autoread
 set exrc

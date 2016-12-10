@@ -4,22 +4,17 @@ My personal linux configuration for desktop/workstation. Contain some customized
 settings, includes:
 
 * Vim
-* Terminator
 * Git
 * Mutt
+* Elinks
 
 Prerequisites
 -------------
 
 * vim
-* terminator
 * git
 * mutt
-
-Recommended to install
-----------------------
-
-* vim-gtk
+* elinks
 
 Usage
 -----
@@ -29,11 +24,7 @@ Usage
 
 ### Vim
 
-	cp -Rp .vi* ~/
-
-### Terminator
-
-	cp .config ~/
+	cp -Rp .vim/ ~/
 
 ### Git
 	
@@ -44,7 +35,10 @@ Usage
 	cp .muttrc ~/
 	mkdir mail
 	touch ~/mail/inbox
-	source ~/.bashrc 
+
+### Elinks
+
+	cp -Rp .elinks/ ~/
 
 Don't forget to edit .gitconfig and .muttrc as they contain email
 settings which unique among different person.
