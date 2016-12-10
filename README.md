@@ -19,7 +19,7 @@ Prerequisites
 Usage
 -----
 
-	git clone git@github.com:dstw/dotfiles.git
+	git clone --recursive git@github.com:dstw/dotfiles.git
 	cd dotfiles/ 
 
 ### Vim
