@@ -1,0 +1,27 @@
+[submodule "CCTree"]
+	path = CCTree
+	url = https://github.com/hari-rangarajan/CCTree.git
+[submodule ".vim/bundle/CCTree"]
+	path = .vim/bundle/CCTree
+	url = https://github.com/hari-rangarajan/CCTree.git
+[submodule ".vim/bundle/Conque-GDB"]
+	path = .vim/bundle/Conque-GDB
+	url = https://github.com/vim-scripts/Conque-GDB.git
+[submodule ".vim/bundle/mru"]
+	path = .vim/bundle/mru
+	url = https://github.com/yegappan/mru.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/bundle/vim-airline-themes"]
+	path = .vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-pathogen"]
+	path = .vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
