@@ -19,7 +19,9 @@ On Debian system:
 	sudo apt install zsh tmux vim mutt elinks mc git stow
 
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).  
-Install [base16-shell](https://github.com/chriskempson/base16-shell).
+Install [base16-shell](https://github.com/chriskempson/base16-shell). 
+Install [Powerline Fonts](https://github.com/powerline/fonts).  
+Install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
 
 Usage
 -----
@@ -45,12 +47,13 @@ Create symbolic links for the configurations you want to use, e.g. for vim:
 
 	ln -s vim/.vimrc ~/.vimrc
 
-Notes for very Mutt & Git:  
-Don't forget to edit .gitconfig and .muttrc as they contain email
-settings which unique among different person.
+Notes for Mutt & Git:  
+Don't forget to edit .gitconfig and .muttrc as they contain email settings which
+is unique among different person.
 
 Screenshots
 -----------
 
 ![terminal1](https://github.com/dstw/dotfiles/raw/master/screenshots/terminal1.png)
 ![terminal2](https://github.com/dstw/dotfiles/raw/master/screenshots/terminal2.png)
+![terminal3](https://github.com/dstw/dotfiles/raw/master/screenshots/terminal3.png)
