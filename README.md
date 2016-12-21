@@ -1,49 +1,56 @@
 # dotfiles
 
-My personal linux configuration for desktop/workstation. Contain some customized 
+My personal configuration for desktop/workstation. Contain some customized 
 settings, includes:
 
+* Zsh
+* Tmux
 * Vim
-* Git
 * Mutt
 * Elinks
+* Midnight Commander
+* Git
 
 Prerequisites
 -------------
 
-* vim
-* git
-* mutt
-* elinks
+On Debian system:
+
+	sudo apt install zsh tmux vim mutt elinks mc git stow
+
+Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+Install [base16-shell](https://github.com/chriskempson/base16-shell).
 
 Usage
 -----
 
 	git clone --recursive git@github.com:dstw/dotfiles.git
-	cd dotfiles/ 
 
-### Vim
+### Installation
 
-	cp -Rp .vim/ ~/
+Using GNU Stow.
 
-### Git
-	
-	cp .gitconfig ~/
+	cd dotfiles/
+	stow zsh
+	stow tmux
+	stow vim
+	stow mutt
+	stow elinks
+	stow mc
+	stow git
 
-### Mutt
+### Manual Installation
 
-	cp .muttrc ~/
-	mkdir mail
-	touch ~/mail/inbox
+Create symbolic links for the configurations you want to use, e.g. for vim:
 
-### Elinks
+	ln -s vim/.vimrc ~/.vimrc
 
-	cp -Rp .elinks/ ~/
-
+Notes for very Mutt & Git:
 Don't forget to edit .gitconfig and .muttrc as they contain email
 settings which unique among different person.
 
 Screenshots
 -----------
 
-![terminal](https://github.com/dstw/conf-linux/raw/master/screenshots/terminal.png)
+![terminal1](https://github.com/dstw/dotfiles/raw/master/screenshots/terminal1.png)
+![terminal2](https://github.com/dstw/dotfiles/raw/master/screenshots/terminal2.png)

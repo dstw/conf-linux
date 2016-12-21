@@ -25,15 +25,19 @@ set ssl_force_tls = yes
 set smtp_url = "smtps://$from@smtp.zoho.com:465"
 set smtp_pass = $my_pw_zoho
 
+# Sidebar
+#set sidebar_visible = yes
+
 # Keybindings
 bind pager j next-line
 bind pager k previous-line
-bind attach,index,pager \CD next-page
-bind attach,index,pager \CU previous-page
+bind attach,index,pager \CF next-page
+bind attach,index,pager \CB previous-page
 bind pager g top
 bind pager G bottom
 bind attach,index g first-entry
 bind attach,index G last-entry
+bind index,pager B sidebar-toggle-visible
 
 # vim: filetype=muttrc
 
@@ -61,7 +65,7 @@ bind attach,index G last-entry
 # base03, bg, black, any of the non brights
 
 # basic colors ---------------------------------------------------------
-color normal        brightyellow    default         
+color normal        brightyellow    black         
 color error         red             default         
 color tilde         black           default         
 color message       cyan            default         
@@ -70,7 +74,8 @@ color attachment    white           default
 color search        brightmagenta   default         
 #color status        J_black         J_status        
 color status        brightyellow    black           
-color indicator     brightblack     yellow          
+#color indicator     black	    white
+color indicator     black           yellow          
 color tree          yellow          default                                     # arrow in threads
 
 # basic monocolor screen

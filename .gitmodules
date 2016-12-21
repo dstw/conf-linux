@@ -1,27 +1,42 @@
-[submodule "CCTree"]
-	path = CCTree
+[submodule "vim/.vim/bundle/base16-vim"]
+	path = vim/.vim/bundle/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule "vim/.vim/bundle/CCTree"]
+	path = vim/.vim/bundle/CCTree
 	url = https://github.com/hari-rangarajan/CCTree.git
-[submodule ".vim/bundle/CCTree"]
-	path = .vim/bundle/CCTree
-	url = https://github.com/hari-rangarajan/CCTree.git
-[submodule ".vim/bundle/Conque-GDB"]
-	path = .vim/bundle/Conque-GDB
+[submodule "vim/.vim/bundle/Conque-GDB"]
+	path = vim/.vim/bundle/Conque-GDB
 	url = https://github.com/vim-scripts/Conque-GDB.git
-[submodule ".vim/bundle/mru"]
-	path = .vim/bundle/mru
+[submodule "vim/.vim/bundle/mru"]
+	path = vim/.vim/bundle/mru
 	url = https://github.com/yegappan/mru.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule ".vim/bundle/vim-airline-themes"]
-	path = .vim/bundle/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
+[submodule "vim/.vim/bundle/nerdtree-git-plugin"]
+	path = vim/.vim/bundle/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "vim/.vim/bundle/vim-airline"]
+	path = vim/.vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/.vim/bundle/vim-airline-themes"]
+	path = vim/.vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/.vim/bundle/vim-colorschemes"]
+	path = vim/.vim/bundle/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/.vim/bundle/vim-devicons"]
+	path = vim/.vim/bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "vim/.vim/bundle/vim-fugitive"]
+	path = vim/.vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
+[submodule "vim/.vim/bundle/vim-nerdtree-syntax-highlight"]
+	path = vim/.vim/bundle/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule "vim/.vim/bundle/vim-nerdtree-tabs"]
+	path = vim/.vim/bundle/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "vim/.vim/bundle/vim-pathogen"]
+	path = vim/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git

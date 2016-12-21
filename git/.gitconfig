@@ -1,9 +1,10 @@
 [user]
-	name = Didik Setiawan
 	email = ds@didiksetiawan.com
+	name = Didik Setiawan
 [sendemail]
 	smtpEncryption = ssl
 	smtpServer = smtp.zoho.com
 	smtpUser = ds@didiksetiawan.com
 	smtpServerPort = 465
 	suppresscc = self
+	assume8bitEncoding = UTF-8
