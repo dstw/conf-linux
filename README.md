@@ -18,10 +18,15 @@ On Debian system:
 
 	sudo apt install zsh tmux vim mutt elinks mc git stow
 
-Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).  
-Install [base16-shell](https://github.com/chriskempson/base16-shell). 
-Install [Powerline Fonts](https://github.com/powerline/fonts).  
-Install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
+Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), a configuration
+framework for our Zsh shell. It makes your shell more fancy.  
+Install [base16-shell](https://github.com/chriskempson/base16-shell). Custom
+shell colorscheme which allow you to have unified colors in all your command
+line applications.  
+Install [Powerline Fonts](https://github.com/powerline/fonts). Display fancy
+symbol for powerline icons used for Vim Airline status bar and Zsh shell prompt.  
+Install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts). Display fancy
+icons on Vim Airline status bar and Vim Nerdtree explorer pane.
 
 Usage
 -----
@@ -30,7 +35,10 @@ Usage
 
 ### Installation
 
-Using GNU Stow.
+I treat all of this configuration files and folders as symbolic link.
+For easy installation, I will use GNU Stow.  
+*Caution: if the configuration files already exist, you must move or delete 
+them first. Otherwise, this installation process will fail.*
 
 	cd dotfiles/
 	stow zsh
@@ -43,11 +51,13 @@ Using GNU Stow.
 
 ### Manual Installation
 
-Create symbolic links for the configurations you want to use, e.g. for vim:
+Create symbolic links for the configurations you want to use, e.g. for Vim:
 
 	ln -s vim/.vimrc ~/.vimrc
+	ln -s vim/.vimrc_background ~/.vimrc_background
+	ln -s vim/.vim ~/.vim
 
-Notes for Mutt & Git:  
+*Notes for Mutt & Git:*    
 Don't forget to edit .gitconfig and .muttrc as they contain email settings which
 is unique among different person.
 

@@ -1,10 +1,64 @@
+# https://github.com/integralis/dotfiles
+
+[alias]
+	lg                  = log --graph --pretty=format:'%Cred%h%Creset (%an) -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	logg                = log --graph
+	logme               = log --graph --author='Didik Setiawan' # use your own name
+	recentbranches      = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+	st                  = status
+	unstage             = reset HEAD --
+
+[apply]
+	whitespace          = nowarn
+
+[branch "master"]
+	rebase              = true
+
+[color]
+	ui                  = true
+	commit              = red
+
+[color "diff"]
+	frag                = magenta
+	meta                = yellow
+	new                 = green
+	old                 = red
+
+[color "status"]
+	added               = red
+	changed             = yellow
+	untracked           = white
+
+[core]
+	editor              = vim
+	ignorecase          = false
+
+[diff]
+	indentHeuristic     = true
+	compactionHeuristic = true
+
+[merge]
+	conflictstyle       = merge # previously 'diff3' (common ancestors) but wasn't that useful
+	tool                = vimdiff
+
+[mergetool]
+	prompt              = true
+
+[push]
+	default             = upstream
+
+[url "git@github.com:"]
+	insteadof           = https://github.com/
+
 [user]
-	email = ds@didiksetiawan.com
-	name = Didik Setiawan
+	email               = ds@didiksetiawan.com	# your email here
+	name                = Didik Setiawan		# your name here
+
 [sendemail]
-	smtpEncryption = ssl
-	smtpServer = smtp.zoho.com
-	smtpUser = ds@didiksetiawan.com
-	smtpServerPort = 465
-	suppresscc = self
-	assume8bitEncoding = UTF-8
+	# your email credential
+	smtpEncryption      = ssl
+	smtpServer          = smtp.zoho.com
+	smtpUser            = ds@didiksetiawan.com	
+	smtpServerPort      = 465
+	suppresscc          = self
+	assume8bitEncoding  = UTF-8
