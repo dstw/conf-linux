@@ -1,4 +1,4 @@
-# https://github.com/integralis/dotfiles
+# https://github.com/Integralist/dotfiles
 
 [alias]
 	lg                  = log --graph --pretty=format:'%Cred%h%Creset (%an) -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
@@ -25,9 +25,9 @@
 	old                 = red
 
 [color "status"]
-	added               = red
-	changed             = yellow
-	untracked           = white
+	added               = green
+	changed             = red
+	untracked           = yellow
 
 [core]
 	editor              = vim

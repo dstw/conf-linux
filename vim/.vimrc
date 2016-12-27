@@ -34,13 +34,14 @@ colorscheme CandyPaper
 
 " air-line
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'dark'
+let g:airline_theme = 'murmur'
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
 let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 
-" nerdtree git symbols
+" nerdtree
+let NERDTreeShowHidden=1
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -58,6 +59,7 @@ if filereadable(expand("~/.vimrc_background"))
 	source ~/.vimrc_background
 endif
 
+" EasyAlign
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 

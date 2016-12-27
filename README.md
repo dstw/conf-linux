@@ -23,9 +23,9 @@ framework for our Zsh shell. It makes your shell more fancy.
 Install [base16-shell](https://github.com/chriskempson/base16-shell). Custom
 shell colorscheme which allow you to have unified colors in all your command
 line applications.  
-Install [Powerline Fonts](https://github.com/powerline/fonts). Display fancy
+Install [Powerline Fonts](https://github.com/powerline/fonts). Display 
 symbol for powerline icons used for Vim Airline status bar and Zsh shell prompt.  
-Install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts). Display fancy
+Install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts). Display 
 icons on Vim Airline status bar and Vim Nerdtree explorer pane.
 
 Usage
