@@ -1,0 +1,46 @@
+DATE=`date +%Y-%m`
+SHELL=/bin/zsh
+VERBOSE=off
+LOGFILE=$HOME/.procmail.log
+
+# Inserts a blank line between log entries
+LOG="
+"
+
+MAIL=$HOME/mail
+MLIST=$MAIL
+
+# Delivery to inboxes
+# My mailing list subscription
+# {{{
+
+:0:
+* ^TO_.*git@vger.kernel.org
+$MAIL/git-devel
+
+:0:
+* ^TO_.*strace-devel@lists.sourceforge.net
+$MAIL/strace-devel
+
+:0:
+* ^TO_.*kernelnewbies@kernelnewbies.org
+$MAIL/kernelnewbies
+
+:0:
+* ^TO_.*ubuntu-users@lists.ubuntu.com>
+$MAIL/ubuntu-users
+
+:0:
+* ^TO_.*id-networkers@googlegroups.com
+$MAIL/idnetworkers
+
+:0:
+* ^TO_.*git-users@googlegroups.com
+$MAIL/git-users
+
+# }}}
+#
+# Everything else go to main inbox
+
+:0
+$MAIL/inbox

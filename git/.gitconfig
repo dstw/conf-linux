@@ -57,8 +57,8 @@
 [sendemail]
 	# your email credential
 	smtpEncryption      = ssl
-	smtpServer          = smtp.zoho.com
-	smtpUser            = ds@didiksetiawan.com	
+	smtpServer          = smtp.zoho.com			# your smtp server address	
+	smtpUser            = ds@didiksetiawan.com	# your username
 	smtpServerPort      = 465
 	suppresscc          = self
 	assume8bitEncoding  = UTF-8

@@ -6,20 +6,20 @@ settings, includes:
 * Zsh
 * Tmux
 * Vim
+* Git
 * Mutt
 * Elinks
 * Midnight Commander
-* Git
 
 Prerequisites
 -------------
 
-On Debian system:
+On Debian/Ubuntu system:
 
-	sudo apt install zsh tmux vim mutt elinks mc git stow
+	sudo apt install zsh tmux vim mutt fetchmail procmail elinks mc git stow
 
-Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), a configuration
-framework for our Zsh shell. It makes your shell more fancy.  
+Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). A configuration
+framework for your Zsh shell. It makes your shell more fancy.  
 Install [base16-shell](https://github.com/chriskempson/base16-shell). Custom
 shell colorscheme which allow you to have unified colors in all your command
 line applications.  
@@ -31,23 +31,23 @@ icons on Vim Airline status bar and Vim Nerdtree explorer pane.
 Usage
 -----
 
-	git clone --recursive git@github.com:dstw/dotfiles.git
+	git clone --recursive https://github.com/dstw/dotfiles.git
 
 ### Installation
 
 I treat all of this configuration files and folders as symbolic link.
 For easy installation, I will use GNU Stow.  
-*Caution: if the configuration files already exist, you must move or delete 
-them first. Otherwise, this installation process will fail.*
+**Caution: if the configuration files already exist, you must move or delete 
+them first. Otherwise, this installation process will fail.**
 
 	cd dotfiles/
 	stow zsh
 	stow tmux
 	stow vim
+	stow git
 	stow mutt
 	stow elinks
 	stow mc
-	stow git
 
 ### Manual Installation
 
@@ -57,9 +57,18 @@ Create symbolic links for the configurations you want to use, e.g. for Vim:
 	ln -s vim/.vimrc_background ~/.vimrc_background
 	ln -s vim/.vim ~/.vim
 
-*Notes for Mutt & Git:*    
-Don't forget to edit .gitconfig and .muttrc as they contain email settings which
-is unique among different person.
+Additional requirements for fetchmail & procmail, manually create log files:
+
+	touch ~/.fetchmail.log ~/.procmail.log
+
+**Notes for specific credential:**  
+The following files, contain per user credential information, need to edit
+before use:
+
+* .gitconfig
+* .fetchmailrc
+* .procmailrc
+* .muttrc
 
 Screenshots
 -----------
