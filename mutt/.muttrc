@@ -42,23 +42,16 @@ bind pager \Cp	sidebar-prev
 bind pager \Cn	sidebar-next
 bind pager \Co	sidebar-open
 
-# b toggles sidebar visibility
-macro index b '<enter-command>toggle sidebar_visible<enter>'
-macro pager b '<enter-command>toggle sidebar_visible<enter>'
-
-# Remap bounce-message function to "B"
-bind index B bounce-message
-
 # Keybindings
 bind pager j next-line
 bind pager k previous-line
 bind attach,index,pager \CF next-page
 bind attach,index,pager \CB previous-page
+bind attach,index,pager b previous-page
 bind pager g top
 bind pager G bottom
 bind attach,index g first-entry
 bind attach,index G last-entry
-bind index,pager B sidebar-toggle-visible
 bind index,pager B sidebar-toggle-visible
 
 # basic colors

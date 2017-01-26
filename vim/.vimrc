@@ -1,11 +1,14 @@
-" Use Vim instead of Vi api, must be first, it's affect other caller
+" Use Vim instead of Vi api, must be first, it's affect other options
 set nocompatible
 
 " Switch syntax highlighting on, when the terminal has colors
 syntax on
 
-" No backup files, write backup and swap file
-set nobackup nowritebackup noswapfile
+" No backup files and write backup
+set nobackup nowritebackup
+
+" Set custom directory to save swap file
+set directory^=$HOME/.vim/tmp//
 
 " Autoload files that have changed outside of Vim
 set autoread
@@ -172,6 +175,9 @@ nmap tt :TagbarToggle<CR>
 
 " UndoTree
 nmap <C-u> :UndotreeToggle<CR>
+
+" Fugitive
+nmap <C-g> :Gblame<CR>
 
 " Start GVim with Insert Mode to prevent Vim "panic mode"
 if has("gui_running")
