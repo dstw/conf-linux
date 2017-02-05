@@ -1,0 +1,8 @@
+# Tmux ressurection files
+tmux/.tmux/resurrect/
+
+# Vim files
+Session.vim
+vim/.vim/.netrwhist
+vim/.vim/sessions/
+vim/.vim/tmp/

@@ -1,9 +1,6 @@
 " Use Vim instead of Vi api, must be first, it's affect other options
 set nocompatible
 
-" Switch syntax highlighting on, when the terminal has colors
-syntax on
-
 " No backup files and write backup
 set nobackup nowritebackup
 
@@ -31,7 +28,7 @@ set laststatus=2
 " Show incomplete commands
 set showcmd
 
-" Get rid of the delay when pressing O (for example)
+" Get rid of the delay when pressing O
 set timeout timeoutlen=1000 ttimeoutlen=100
 
 " Command history
@@ -98,18 +95,50 @@ set scrolloff=5
 " Prevent insertion of spaces as replacement for <Tab>, because we need real <Tab>
 set noexpandtab
 
+" Switch syntax highlighting on, when the terminal has colors
+syntax on
+
 " Plugin to autodetect filetype and custom colorscheme and identation
 filetype plugin indent on
 
 " Live search on selected text on visual mode
 vnoremap // y/<C-R>"<CR>
 
+" This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :nohlsearch<CR><CR>
+
+" Move between buffer
+nmap K :bnext<CR>
+nmap J :bprevious<CR>
+
+" Custom File formats handling
+" Set Git commit to wrap on column 72 and enable spelling check
+autocmd Filetype gitcommit set spell textwidth=72
+" Set Markdown file to enable spelling check and show eol
+autocmd Filetype markdown set spell list listchars=tab:>-,eol:¶
+autocmd Filetype markdown highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd Filetype markdown match ExtraWhitespace /\s\+$/
+
+" Specify syntax highlighting for specific files
+" Vim interprets .md as 'modula2' otherwise, see :set filetype?
+autocmd Bufread,BufNewFile *.md set filetype=markdown
+
+" Change matching braces color
+highlight MatchParen cterm=bold ctermfg=cyan
+
+" Nerdtree like file browser using Netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+
+" 3rd party plugin 
+" {{{
+
 " Pathogen Plugin Manager
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-
-" This unsets the "last search pattern" register by hitting return
-nnoremap <CR> :nohlsearch<CR><CR>
 
 " Vim's theme
 colorscheme CandyPaper
@@ -127,7 +156,7 @@ endif
 let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 let g:airline#extensions#tabline#enabled = 1
 
-" NERDTree
+" NERDTree Directory Browser
 map <C-n> <plug>NERDTreeTabsToggle<CR>
 let NERDTreeShowHidden=1
 let g:NERDTreeIndicatorMapCustom = {
@@ -185,26 +214,14 @@ if has("gui_running")
 	autocmd VimEnter * :NERDTreeClose
 endif
 
-" Custom File formats handling
-" Set Git commit to wrap on column 72 and enable spelling check
-autocmd Filetype gitcommit set spell textwidth=72
-" Set Markdown file to enable spelling check and show eol
-autocmd Filetype markdown set spell list listchars=tab:>-,eol:¶
-autocmd Filetype markdown highlight ExtraWhitespace ctermbg=red guibg=red
-autocmd Filetype markdown match ExtraWhitespace /\s\+$/
-" Disable Airline and cursor highlighting in ConqueGdb, speed matter
-autocmd FileType conque_term :AirlineToggle
-autocmd FileType conque_term windo set nocursorline
-
-" Specify syntax highlighting for specific files
-" Vim interprets .md as 'modula2' otherwise, see :set filetype?
-autocmd Bufread,BufNewFile *.md set filetype=markdown
-
-" Change matching braces color
-highlight MatchParen cterm=bold ctermfg=cyan
-
 " EasyAlign
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" Disable Airline and cursor highlighting in ConqueGdb, speed matter
+autocmd FileType conque_term :AirlineToggle
+autocmd FileType conque_term windo set nocursorline
+
+" }}}

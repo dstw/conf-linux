@@ -42,7 +42,7 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/.vim/bundle/vim-easy-align"]
 	path = vim/.vim/bundle/vim-easy-align
-	url = git@github.com:junegunn/vim-easy-align.git
+	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
@@ -52,3 +52,28 @@
 [submodule "vim/.vim/bundle/rainbow_parentheses.vim"]
 	path = vim/.vim/bundle/rainbow_parentheses.vim
 	url = https://github.com/kien/rainbow_parentheses.vim.git
+[submodule "vim/.vim/bundle/obsession"]
+	path = vim/.vim/bundle/obsession
+	url = https://github.com/tpope/vim-obsession
+[submodule "vim/.vim/bundle/vifm.vim"]
+	path = vim/.vim/bundle/vifm.vim
+	url = https://github.com/vifm/vifm.vim
+[submodule "vim/.vim/bundle/vim-vinegar"]
+	path = vim/.vim/bundle/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git
+[submodule "vifm/.vifm/colors"]
+	path = vifm/.vifm/colors
+	url = https://github.com/vifm/vifm-colors
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "tmux/.tmux/plugins/tmux-resurrect"]
+	path = tmux/.tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+[submodule "tmux/.tmux/plugins/tmux-prefix-highlight"]
+	path = tmux/.tmux/plugins/tmux-prefix-highlight
+	url = https://github.com/tmux-plugins/tmux-prefix-highlight
+[submodule "tmux/.tmux/plugins/tmux-sidebar"]
+	path = tmux/.tmux/plugins/tmux-sidebar
+	url = https://github.com/tmux-plugins/tmux-sidebar
+

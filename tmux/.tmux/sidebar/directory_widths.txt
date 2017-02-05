@@ -1,0 +1,6 @@
+/home/didik/dotfiles/tmux/.tmux/plugins	113
+/home/didik/dotfiles	40
+/home/didik/dotfiles/tmux/.tmux/plugins	40
+/home/didik/dotfiles/vim/.vim/bundle	40
+/home/didik/dotfiles	40
+/home/didik/dotfiles	40
