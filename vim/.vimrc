@@ -101,6 +101,9 @@ syntax on
 " Plugin to autodetect filetype and custom colorscheme and identation
 filetype plugin indent on
 
+" Change leader key
+let mapleader = ","
+
 " Live search on selected text on visual mode
 vnoremap // y/<C-R>"<CR>
 
@@ -156,8 +159,11 @@ endif
 let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ', 'linenr', ':%3v'])
 let g:airline#extensions#tabline#enabled = 1
 
+" Remap ConqueGdb Leader
+let g:ConqueGdb_Leader = '\'
+
 " NERDTree Directory Browser
-map <C-n> <plug>NERDTreeTabsToggle<CR>
+map <leader>e <plug>NERDTreeTabsToggle<CR>
 let NERDTreeShowHidden=1
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -170,6 +176,21 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
+
+" Tagbar - function explorer
+nnoremap <leader>t :TagbarToggle<CR>
+
+" UndoTree
+nnoremap <leader>z :UndotreeToggle<CR>:UndotreeFocus<CR>
+
+" Fugitive -- git blame
+nnoremap <leader>g :Gblame<CR>
+
+" Start GVim with Insert Mode to prevent Vim "panic mode"
+if has("gui_running")
+	startinsert
+	autocmd VimEnter * :NERDTreeClose
+endif
 
 " Rainbow Parentheses
 let g:rbpt_colorpairs = [
@@ -198,27 +219,6 @@ autocmd VimEnter * RainbowParenthesesToggle
 autocmd Syntax * RainbowParenthesesLoadRound
 autocmd Syntax * RainbowParenthesesLoadSquare
 autocmd Syntax * RainbowParenthesesLoadBraces
-
-" Tagbar - function explorer
-nmap tt :TagbarToggle<CR>
-
-" UndoTree
-nmap <C-u> :UndotreeToggle<CR>
-
-" Fugitive
-nmap <C-g> :Gblame<CR>
-
-" Start GVim with Insert Mode to prevent Vim "panic mode"
-if has("gui_running")
-	startinsert
-	autocmd VimEnter * :NERDTreeClose
-endif
-
-" EasyAlign
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
 
 " Disable Airline and cursor highlighting in ConqueGdb, speed matter
 autocmd FileType conque_term :AirlineToggle
