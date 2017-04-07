@@ -1,0 +1,5 @@
+# Vim key bindings for readline related applications
+set editing-mode vi
+
+# Show mode indicator on shell prompt
+set show-mode-in-prompt on

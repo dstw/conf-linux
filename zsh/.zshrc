@@ -30,7 +30,7 @@ setopt EXTENDED_HISTORY
 # Set plugins to load 
 plugins=(git vi-mode)
 
-# Reduce lag to 0.1 sec when change from different vi mode
+# Reduce lag to 0.1 sec when enter vi normal mode
 export KEYTIMEOUT=1
 
 # Use oh-my-zsh framework
