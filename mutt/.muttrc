@@ -6,22 +6,8 @@ set spoolfile = "~/mail/inbox"
 set record = "~/mail/sent"
 set postponed = "~/mail/draft"
 
-mailboxes = "~/mail/inbox"
-mailboxes = "~/mail/sent"
-mailboxes = "~/mail/draft"
-mailboxes = "~/mail/git-devel"
-mailboxes = "~/mail/strace-devel"
-mailboxes = "~/mail/kernelnewbies"
-mailboxes = "~/mail/ubuntu-users"
-mailboxes = "~/mail/idnetworkers"
-mailboxes = "~/mail/git-users"
-
-# Credential
-set realname = "Didik Setiawan"
-set smtp_url = "smtps://ds@didiksetiawan@smtp.zoho.com:465"
-set ssl_force_tls = yes
-
 # Format
+set ssl_force_tls = yes
 set use_from = yes
 set envelope_from = yes
 set send_charset = "utf-8"
@@ -45,14 +31,16 @@ bind pager \Co	sidebar-open
 # Keybindings
 bind pager j next-line
 bind pager k previous-line
-bind attach,index,pager \CF next-page
-bind attach,index,pager \CB previous-page
+bind attach,index,pager \Cd next-page
+bind attach,index,pager \Cu previous-page
 bind attach,index,pager b previous-page
 bind pager g top
 bind pager G bottom
 bind attach,index g first-entry
 bind attach,index G last-entry
 bind index,pager B sidebar-toggle-visible
+bind attach,index,pager \Cb bounce-message
+bind attach,index,pager a group-reply
 
 # basic colors
 color normal        brightyellow    black         
@@ -169,3 +157,10 @@ auto_view text/x-script.elisp
 auto_view text/x-lisp
 auto_view text/x-diff
 auto_view image/tiff
+
+# this section is personalize parts
+source ~/.mutt/mailboxes
+source ~/.mutt/credential
+
+# show version
+push <show-version>

@@ -27,7 +27,7 @@ $MAIL/strace-devel
 $MAIL/kernelnewbies
 
 :0:
-* ^TO_.*ubuntu-users@lists.ubuntu.com>
+* ^TO_.*ubuntu-users@lists.ubuntu.com
 $MAIL/ubuntu-users
 
 :0:
@@ -37,6 +37,34 @@ $MAIL/idnetworkers
 :0:
 * ^TO_.*git-users@googlegroups.com
 $MAIL/git-users
+
+:0:
+* ^TO_.*rspamd@googlegroups.com
+$MAIL/rspamd-dev
+
+:0:
+* ^TO_.*swan-dev@lists.libreswan.org
+$MAIL/swan-dev
+
+:0:
+* ^TO_.*bug-wget@gnu.org
+$MAIL/wget-dev
+
+:0:
+* ^TO_.*kernel-janitors@vger.kernel.org
+$MAIL/kernel-janitors
+
+:0:
+* ^TO_.*netfilter-devel@vger.kernel.org
+$MAIL/netfilter-devel
+
+:0:
+* ^TO_.*netfilter@vger.kernel.org
+$MAIL/netfilter-users
+
+:0:
+* ^TO_.*google-summer-of-code-discuss@googlegroups.com
+$MAIL/gsoc
 
 # }}}
 #
