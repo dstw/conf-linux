@@ -66,6 +66,26 @@ $MAIL/netfilter-users
 * ^TO_.*google-summer-of-code-discuss@googlegroups.com
 $MAIL/gsoc
 
+:0:
+* ^TO_.*vim_dev@googlegroups.com
+$MAIL/vim
+
+:0:
+* ^TO_.*vim_use@googlegroups.com
+$MAIL/vim
+
+:0:
+* ^TO_.*vim@noreply.github.com
+$MAIL/vim
+
+:0:
+* ^TO_.*tmux-users@googlegroups.com
+$MAIL/tmux
+
+:0:
+* ^TO_.*libmicrohttpd@gnu.org
+$MAIL/libmicrohttpd
+
 # }}}
 #
 # Everything else go to main inbox

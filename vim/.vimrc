@@ -113,12 +113,17 @@ nnoremap <CR> :nohlsearch<CR><CR>
 " Move between buffer
 nmap K :bnext<CR>
 nmap J :bprevious<CR>
+nmap X :bdelete<CR>
+
+" Toggle paste mode
+set pastetoggle=<leader>p
 
 " Custom File formats handling
 " Set Git commit to wrap on column 72 and enable spelling check
 autocmd Filetype gitcommit set spell textwidth=72
 " Set Markdown file to enable spelling check and show eol
-autocmd Filetype markdown set spell list listchars=tab:>-,eol:¶
+"autocmd Filetype markdown set spell list listchars=tab:>-,eol:¶
+autocmd Filetype markdown set spell list listchars=tab:>-
 autocmd Filetype markdown highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Filetype markdown match ExtraWhitespace /\s\+$/
 
@@ -127,7 +132,9 @@ autocmd Filetype markdown match ExtraWhitespace /\s\+$/
 autocmd Bufread,BufNewFile *.md set filetype=markdown
 
 " Change matching braces color
-highlight MatchParen cterm=bold ctermfg=cyan
+"highlight MatchParen cterm=bold ctermfg=cyan
+" Disable matching parentheses
+let g:loaded_matchparen=1
 
 " Nerdtree like file browser using Netrw
 let g:netrw_banner = 0
@@ -203,7 +210,7 @@ let g:rbpt_colorpairs = [
     \ ['darkmagenta', 'DarkOrchid3'],
     \ ['brown',       'firebrick3'],
     \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
+    \ ['red',         'SeaGreen3'],
     \ ['darkmagenta', 'DarkOrchid3'],
     \ ['Darkblue',    'firebrick3'],
     \ ['darkgreen',   'RoyalBlue3'],

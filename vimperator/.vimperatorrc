@@ -1,0 +1,42 @@
+" vim: set ft=vimperator:
+
+" make scrolling up-down faster
+:noremap j 3j
+:noremap k 3k
+
+" move between tab
+:noremap J <C-p>
+:noremap K <C-n>
+
+" move tab
+:noremap < :tabmove -1<cr>
+:noremap > :tabmove +1<cr>
+
+" use alphabet instead number on hints
+:set hintchars="sdfjklruvm"
+
+" close tab
+:noremap x :quit<cr>
+
+" change default search engine
+:set defsearch=duckduckgo
+
+" command autocomplete
+:set wildmode=auto
+:set complete=Ssl
+
+" change 'a' key for open new tab
+:noremap a t
+
+" disable 'd' key for close tab
+:noremap d <Nop>
+
+" stay in normal mode after loading page
+:set focuscontent
+
+" map 'Esc' for stop reload page
+:noremap <Esc> :stop<cr>
+
+" shortcut to refresh config
+map <C-r> :source ~/.vimperatorrc<cr>
+echo "vimperatorrc loaded successfully"
