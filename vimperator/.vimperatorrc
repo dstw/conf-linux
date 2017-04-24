@@ -22,7 +22,7 @@
 :set defsearch=duckduckgo
 
 " command autocomplete
-:set wildmode=auto
+:set wildmode=list:full
 :set complete=Ssl
 
 " change 'a' key for open new tab
@@ -37,6 +37,9 @@
 " map 'Esc' for stop reload page
 :noremap <Esc> :stop<cr>
 
+" use Ctrl-p/n as up/down arrow in command line
+:cnoremap <C-p> <Up>
+:cnoremap <C-n> <Down>
+
 " shortcut to refresh config
-map <C-r> :source ~/.vimperatorrc<cr>
-echo "vimperatorrc loaded successfully"
+:map <C-r> :source ~/.vimperatorrc <cr> echo "vimperatorrc loaded successfully"
