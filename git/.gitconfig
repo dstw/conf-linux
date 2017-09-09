@@ -7,6 +7,9 @@
 	recentbranches      = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 	st                  = status
 	unstage             = reset HEAD --
+	ch					= checkout
+	br					= branch
+	di					= diff
 
 [apply]
 	whitespace          = nowarn
