@@ -23,13 +23,14 @@
 
 " command autocomplete
 :set wildmode=list:full
-:set complete=Ssl
+:set complete=lSs
 
 " change 'a' key for open new tab
 :noremap a t
 
 " disable 'd' key for close tab
 :noremap d <Nop>
+:noremap D <Nop>
 
 " stay in normal mode after loading page
 :set focuscontent
@@ -40,6 +41,9 @@
 " use Ctrl-p/n as up/down arrow in command line
 :cnoremap <C-p> <Up>
 :cnoremap <C-n> <Down>
+
+" change title
+:set titlestring="Mozilla Firefox"
 
 " shortcut to refresh config
 :map <C-r> :source ~/.vimperatorrc <cr> echo "vimperatorrc loaded successfully"
