@@ -69,7 +69,7 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 
 " Highlight a matching [{()}] when cursor is placed on start/end character
-set showmatch
+"set showmatch
 
 " Enable per-directory .vimrc files
 set exrc
@@ -117,6 +117,19 @@ nmap X :bdelete<CR>
 
 " Toggle paste mode
 set pastetoggle=<leader>p
+"nnoremap <leader>p :set paste!<CR>
+
+" Fast quit
+nnoremap <leader>q :quit<CR>
+
+" Toggle number
+nnoremap <leader>n :set number!<CR>
+
+" Toggle word wrap
+nnoremap <leader>w :set wrap!<CR>
+
+" Toggle check spelling
+nnoremap <leader>s :set spell!<CR>
 
 " Custom File formats handling
 " Set Git commit to wrap on column 72 and enable spelling check
@@ -192,6 +205,9 @@ nnoremap <leader>z :UndotreeToggle<CR>:UndotreeFocus<CR>
 
 " Fugitive -- git blame
 nnoremap <leader>g :Gblame<CR>
+
+" Airline
+nnoremap <leader>a :AirlineToggle<CR>
 
 " Start GVim with Insert Mode to prevent Vim "panic mode"
 if has("gui_running")
