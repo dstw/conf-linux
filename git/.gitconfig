@@ -4,6 +4,7 @@
 	lg                  = log --graph --pretty=format:'%Cred%h%Creset (%an) -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	logg                = log --graph
 	logme               = log --graph --author='Didik Setiawan' # use your own name
+	fileme				= ! git log --no-merges --author='Didik Setiawan' --name-only --pretty=format:'' | sort -u | less
 	recentbranches      = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 	st                  = status
 	unstage             = reset HEAD --
