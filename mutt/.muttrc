@@ -1,10 +1,11 @@
 # Storage & Folders
-set mbox_type = mbox
-set mbox = "~/mail/inbox"
-set folder = "~/mail/"
-set spoolfile = "~/mail/inbox"
-set record = "~/mail/sent"
-set postponed = "~/mail/draft"
+set mbox_type = Maildir
+#set mbox = "~/mail/inbox"
+set folder = "~/Maildir/"
+set spoolfile = "~/Maildir/INBOX"
+set record = "~/Maildir/Sent"
+set postponed = "~/Maildir/Drafts"
+set header_cache = "~/Maildir/hcache"
 
 # Format
 set ssl_force_tls = yes
@@ -12,7 +13,7 @@ set use_from = yes
 set envelope_from = yes
 set send_charset = "utf-8"
 set sort = reverse-threads
-set index_format="%4C %Z %[%D %H:%M:%S] %-15.15L (%4l) %s"
+set index_format="%4C %Z %[%D %H:%M:%S] %-25.25L (%4l) %s"
 set pager_stop
 
 # Sidebar settings for mutt

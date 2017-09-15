@@ -1,0 +1,30 @@
+[general]
+accounts = dstw
+#pythonfile = ~/.offlineimap.py
+
+[Account dstw]
+localrepository = dstwLocal
+remoterepository = dstwRemote
+#status_backend = sqlite
+#postsynchook = notmuch new
+
+[Repository dstwRemote]
+type = IMAP
+remotehost = imappro.zoho.com
+remoteuser = ds@didiksetiawan.com
+#remotepasseval = get_pass()
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+
+[Repository dstwLocal]
+type = Maildir
+localfolders = ~/Maildir
+restoreatime = no
+
+#[mbnames]
+#enabled = yes
+#filename = ~/.mutt/mailboxes
+#header = "mailboxes "
+#peritem = "+%(accountname)s/%(foldername)s"
+#sep = " "
+#footer = "\n"
