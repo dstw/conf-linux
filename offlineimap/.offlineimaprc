@@ -1,6 +1,6 @@
 [general]
 accounts = dstw
-#pythonfile = ~/.offlineimap.py
+pythonfile = ~/.offlineimap.py
 
 [Account dstw]
 localrepository = dstwLocal
@@ -12,7 +12,7 @@ remoterepository = dstwRemote
 type = IMAP
 remotehost = imappro.zoho.com
 remoteuser = ds@didiksetiawan.com
-#remotepasseval = get_pass()
+remotepasseval = get_pass()
 ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 
