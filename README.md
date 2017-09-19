@@ -10,24 +10,27 @@ some configuration of frequent used programs:
 * Mutt
 * Vimperator
 * Git
+* GnuPG
+* Offlineimap
 * Bash
 
 And configuration for some less used programs:
 
 * Vifm
+* Urlview
 * Elinks
 * Midnight Commander
 
-Most of those config file are based on Vim key bindings.
+Most of those config file are based on Vim-like keybindings.
 
 Prerequisites
 -------------
 
 On Debian/Ubuntu system:
 
-	sudo apt install vim zsh tmux mutt fetchmail procmail git vifm elinks mc stow
+	sudo apt install elinks git gnupg mc mutt offlineimap tmux urlview vifm vim zsh
 
-Install vimperator addon for Firefox:
+Install Vimperator addon for Firefox:
 https://addons.mozilla.org/en-US/firefox/addon/vimperator/
 
 Optional for Zsh:
@@ -53,15 +56,18 @@ Usage
 I treat all of this configuration files and folders as symbolic link.
 For easy installation, I will use GNU Stow.  
 **Caution: if the configuration files already exist, you must move or delete
-them first. Otherwise, this installation process will fail.**
+them first. Otherwise, this installation process may fail.**
 
 	cd dotfiles/
 	stow bash
 	stow elinks
 	stow git
+	stow gnupg
 	stow mc
 	stow mutt
+	stow offlineimap
 	stow tmux
+	stow urlview
 	stow vifm
 	stow vim
 	stow vimperator
@@ -75,19 +81,15 @@ Create symbolic links for the configurations you want to use, e.g. for Vim:
 	ln -s vim/.vimrc_background ~/.vimrc_background
 	ln -s vim/.vim ~/.vim
 
-Additional requirements for fetchmail & procmail, manually create log files:
-
-	touch ~/.fetchmail.log ~/.procmail.log
-
 **Notes for specific credential:**  
 The following files, contain per user credential information, need to edit
 before use:
 
-* .gitconfig
-* .fetchmailrc
-* .procmailrc
-* .mutt/credential
-* .mutt/mailboxes
+* git/.gitconfig
+* mutt/.muttrc
+* offlineimap/.offlineimaprc
+* gnupg/.gnupg/gpg.conf
+* elinks/.elinks/elinks.conf
 
 Screenshots
 -----------
