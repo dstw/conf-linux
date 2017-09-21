@@ -102,7 +102,7 @@ set slowfs=curlftpfs
 
 " Set custom status line look
 
-set statusline="  %t%= %A %10u:%-7g %15s %20d  "
+set statusline="  %t%= %A %10u:%-7g %15E %20d  "
 
 " ------------------------------------------------------------------------------
 
@@ -368,10 +368,10 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 " Sample mappings
 
 " Start shell in current directory
-nnoremap s :shell<cr>
+nnoremap S :shell<cr>
 
 " Display sorting dialog
-nnoremap S :sort<cr>
+nnoremap s :sort<cr>
 
 " Toggle visibility of preview window
 nnoremap w :view<cr>
@@ -401,11 +401,18 @@ nnoremap ,t :!xterm &<cr>
 
 " Open vim to edit vifmrc and apply settings after returning to vifm
 nnoremap ,c :write | execute ':!vim $MYVIFMRC' | restart<cr>
+
 " Open gvim to edit vifmrc
 nnoremap ,C :!gvim --remote-tab-silent $MYVIFMRC &<cr>
 
 " Toggle wrap setting on ,w key
 nnoremap ,w :set wrap!<cr>
+
+" Reload configuration
+nnoremap ,r :source ~/.vifm/vifmrc<cr>
+
+" Quit vifm
+nnoremap ,q :quit<cr>
 
 " Example of standard two-panel file managers mappings
 nnoremap <f3> :!less %f<cr>
